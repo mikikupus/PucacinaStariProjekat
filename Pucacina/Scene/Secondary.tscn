@@ -1,0 +1,25 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Tres/Drvo.tres" type="Material" id=1]
+[ext_resource path="res://Tres/Metal.tres" type="Material" id=2]
+[ext_resource path="res://Skripte/Secondary.gd" type="Script" id=3]
+
+[sub_resource type="CubeMesh" id=1]
+
+[sub_resource type="CubeMesh" id=2]
+
+[node name="Secondary" type="MeshInstance"]
+transform = Transform( 0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.25, 0, 0, 0 )
+layers = 2
+mesh = SubResource( 1 )
+material/0 = ExtResource( 2 )
+script = ExtResource( 3 )
+
+[node name="Rucka" type="MeshInstance" parent="."]
+transform = Transform( 0.936, 0, 0, 0, 1.96977, -0.00927033, 0, 0.0694743, 0.262837, 0, -2.7015, -0.767335 )
+layers = 2
+mesh = SubResource( 2 )
+material/0 = ExtResource( 1 )
+
+[node name="ispucaj" type="Spatial" parent="."]
+transform = Transform( 0.999998, 0, 0, 0, 0.999998, 0, 0, 0, 1, 0, -0.149292, 1.25441 )
